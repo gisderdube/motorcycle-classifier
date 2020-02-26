@@ -1,4 +1,4 @@
-name: motorcycle-classifier-app
+name: motorcycle-classifier
 dependencies:
     - python=3.7
     - pip:
