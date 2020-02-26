@@ -1,4 +1,5 @@
-# npm run build
+ 
+npm run build
 
 conda install -c pytorch -c fastai fastai
 
