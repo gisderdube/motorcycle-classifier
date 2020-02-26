@@ -3,4 +3,5 @@ tmp/*
 node_modules/
 .cache/
 dist/
-public/app
+*.pkl
+*.pth
