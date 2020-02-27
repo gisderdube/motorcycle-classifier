@@ -1,0 +1,4 @@
+name: motorcycle-classifier
+dependencies:
+    - pytorch
+    - fastai
