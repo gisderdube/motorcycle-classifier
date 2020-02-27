@@ -1,0 +1,4 @@
+python=3.7.4
+nodejs=12.14.1
+pytorch=1.4.0
+fastai=1.0.60
