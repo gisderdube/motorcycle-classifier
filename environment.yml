@@ -1,5 +1,6 @@
 name: motorcycle-classifier
 dependencies:
     - python=3.6
+    - nodejs=12
     - pytorch
     - fastai
