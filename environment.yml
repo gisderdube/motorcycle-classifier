@@ -1,5 +1,4 @@
 name: root
 dependencies:
-    - python=3.7.4
-    - pytorch=1.4.0
-    - fastai=1.0.60
+    - pytorch
+    - fastai
