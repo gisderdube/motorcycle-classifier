@@ -1,5 +1,3 @@
-npm run build
-
 # conda install conda
 # conda install -c pytorch -c fastai fastai
 
