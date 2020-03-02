@@ -1,5 +1,7 @@
-# conda install conda
-# conda install -c pytorch -c fastai fastai
+conda install conda
+conda install -c pytorch -c fastai fastai
+
+npm run build
 
 if [ ! -f server/cnn/export.pkl ]; then
     curl https://dube-hacking.s3.eu-central-1.amazonaws.com/export.pkl --output server/cnn/export.pkl
