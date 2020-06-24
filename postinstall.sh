@@ -1,3 +1,5 @@
+pip install -r requirements.txt
+
 npm run build
 
 if [ ! -f server/cnn/export.pkl ]; then
