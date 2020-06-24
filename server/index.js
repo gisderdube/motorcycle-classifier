@@ -11,7 +11,7 @@ server.use(
   fileUpload({
     limits: { fileSize: 50 * 1024 * 1024 },
     useTempFiles: true,
-    tempFileDir: path.join(__dirname, "../tmp")
+    tempFileDir: path.join(__dirname, "../tmp"),
   })
 );
 
@@ -35,23 +35,23 @@ function classify(imagePath) {
       [path.join(__dirname, "./classify.py")],
       {
         env: {
-          IMAGE_PATH: imagePath
-        }
+          IMAGE_PATH: imagePath,
+        },
       }
     );
 
     let d = "";
-    pyprog.stdout.on("data", function(data) {
+    pyprog.stdout.on("data", function (data) {
       d += data.toString();
     });
 
-    pyprog.addListener("close", function() {
+    pyprog.addListener("close", function () {
       resolve(d);
     });
 
-    pyprog.stderr.on("data", data => {
+    pyprog.stderr.on("data", (data) => {
       console.error(data.toString());
-      reject(error.toString());
+      reject(data.toString());
     });
   });
 }

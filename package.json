@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently \"PYTHON_PATH=/Users/gisderdube/opt/anaconda3/bin/python nodemon server/index.js\" \"SERVER_URL=http://localhost:3000 parcel app/index.html\"",
+    "dev": "concurrently \"PYTHON_PATH=/usr/local/bin/python3 nodemon server/index.js\" \"SERVER_URL=http://localhost:3000 parcel app/index.html\"",
     "build": "parcel build app/index.html --out-dir server/public/app",
     "postinstall": "sh postinstall.sh",
     "start": "node server/index.js"
