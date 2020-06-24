@@ -1,3 +1,6 @@
+python3 --version
+pip3 --version
+
 npm run build
 
 pip install fastai
