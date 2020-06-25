@@ -8,7 +8,6 @@
     "dev": "concurrently \"PYTHON_PATH=/usr/local/bin/python3 nodemon server/index.js\" \"SERVER_URL=http://localhost:3000 parcel app/index.html\"",
     "build": "parcel build app/index.html --out-dir server/public/app",
     "postinstall": "sh postinstall.sh",
-    "prestart": "pip install -r requirements.txt",
     "start": "node server/index.js"
   },
   "author": "",
