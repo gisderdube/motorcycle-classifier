@@ -2,7 +2,7 @@
 
 ## Instructions
 
-1. Have conda installed
+1. Have python/pip installed
 2. Have node.js installed
 3. npm install
 4. npm run start

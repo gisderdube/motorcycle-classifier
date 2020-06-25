@@ -6,3 +6,4 @@ dist/
 *.pkl
 *.pth
 server/public/app/
+motorcycle-classifier-env/

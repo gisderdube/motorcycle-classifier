@@ -31,7 +31,7 @@ server.post("/classify", async (req, res) => {
 function classify(imagePath) {
   return new Promise((resolve, reject) => {
     const pyprog = spawn(
-      process.env.PYTHON_PATH || "python",
+      path.join(__dirname, "../motorcycle-classifier-env/bin/python"),
       [path.join(__dirname, "./classify.py")],
       {
         env: {
